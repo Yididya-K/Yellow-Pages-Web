@@ -1,0 +1,62 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "City": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Service": {
+    "dataSource": "mongo",
+    "public": false
+  },
+  "Resturant": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Health": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Bank": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "School": {
+    "dataSource": "mongo",
+    "public": true
+  }
+}
