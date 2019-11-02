@@ -1,3 +1,4 @@
+
 <template>
 <v-container class="my-12 ">
 <v-card class="mx-12" :loading="loading">
@@ -135,11 +136,12 @@ import serviceAPI from '../api'
     }),
 
     methods: {
+    //diplay image on the form
      changeImage(){
       this.img = URL.createObjectURL(this.files[0]);
     },
 
-      
+      //upoad image to the api folder data\uploads\images
       async upload(){
         if (this.$refs.form.validate()) {
           try{
