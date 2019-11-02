@@ -21,6 +21,9 @@
     },
     "website": {
       "type": "string"
+    },
+    "imageUrl": {
+      "type": "string"
     }
   },
   "validations": [],
@@ -53,18 +56,7 @@
     {
       "accessType": "EXECUTE",
       "principalType": "ROLE",
-      "principalId": "$owner",
-      "permission": "ALLOW",
-      "property": [
-        "updateAttributes",
-        "upsert",
-        "deleteById"
-      ]
-    },
-    {
-      "accessType": "EXECUTE",
-      "principalType": "ROLE",
-      "principalId": "$owner",
+      "principalId": "$authenticated",
       "permission": "ALLOW",
       "property": "*"
     },
